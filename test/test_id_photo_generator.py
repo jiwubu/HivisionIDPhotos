@@ -322,8 +322,8 @@ class OptimizedIDPhotoGenerator:
 def main():
     """主函数：证件照生成演示"""
     
-    #generator = OptimizedIDPhotoGenerator('http://175.178.173.138:8080')
-    generator = OptimizedIDPhotoGenerator()
+    generator = OptimizedIDPhotoGenerator('http://175.178.173.138:8080')
+    #generator = OptimizedIDPhotoGenerator()
     input_image_path = "temp/test.jpg"
     
     if not os.path.exists(input_image_path):

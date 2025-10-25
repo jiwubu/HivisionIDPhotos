@@ -84,8 +84,8 @@ def detect_face_face_plusplus(ctx: Context):
     :raise FaceError: 人脸检测错误，多个人脸或者没有人脸
     """
     url = "https://api-cn.faceplusplus.com/facepp/v3/detect"
-    api_key = os.getenv("FACE_PLUS_API_KEY")
-    api_secret = os.getenv("FACE_PLUS_API_SECRET")
+    api_key = os.getenv("FACE_PLUS_API_KEY") or 'vM2Qc0zoYpCsKk1ZydNegciShUOShWFE'
+    api_secret = os.getenv("FACE_PLUS_API_SECRET") or '_FM4BsFjngajrpvQwGY4yNLwZUKJpi0J'
 
     print("调用了face++")
 
